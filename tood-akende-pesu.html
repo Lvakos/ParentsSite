@@ -1,16 +1,17 @@
 <!doctype html>
-<!-- СОЗДАНО АВТОМАТИЧЕСКИ скриптом scripts/build-pages.mjs. Тексты меняйте в src/config.ts, затем npm run build. -->
-<html lang="et">
+<!-- СОЗДАНО АВТОМАТИЧЕСКИ скриптом scripts/build-pages.mjs. Тексты меняйте в src/config.ts (SERVICES), затем npm run build. -->
+<html lang="et" data-default-lang="ru">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Akende pesu — PVL Teenused OÜ</title>
-    <meta name="description" content="Peseme aknaid seest ja väljast: klaasid, raamid, aknalauad ja vajaduse korral dekoratiivsed võred.">
+    <script>/* LANG-BOOT */(function(){var d=document.documentElement;try{var p=new URLSearchParams(location.search).get('lang'),s=null;try{s=localStorage.getItem('pvl-lang')}catch(e){}var l=(p==='et'||p==='ru')?p:((s==='et'||s==='ru')?s:(d.getAttribute('data-default-lang')||'et'));if(l!=='et'){d.classList.add('lang-boot');setTimeout(function(){d.classList.remove('lang-boot')},2500)}}catch(e){}d.classList.add('js')})();</script>
+    <title>Korteri / maja koristus — PVL Teenused OÜ</title>
+    <meta name="description" content="Hooldus- ja suurpuhastus, koristus pärast remonti ja kolimist, akende pesu ning pehme mööbli puhastus.">
     <meta name="theme-color" content="#1a4371">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="PVL Teenused OÜ">
-    <meta property="og:title" content="Akende pesu — PVL Teenused OÜ">
-    <meta property="og:description" content="Peseme aknaid seest ja väljast: klaasid, raamid, aknalauad ja vajaduse korral dekoratiivsed võred.">
+    <meta property="og:title" content="Korteri / maja koristus — PVL Teenused OÜ">
+    <meta property="og:description" content="Hooldus- ja suurpuhastus, koristus pärast remonti ja kolimist, akende pesu ning pehme mööbli puhastus.">
     <meta property="og:locale" content="et_EE">
     <meta property="og:locale:alternate" content="ru_RU">
     <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -26,7 +27,7 @@
     <script defer src="assets/js/request.js"></script>
     <script defer src="assets/js/index.js"></script>
 </head>
-<body data-category-page="tood-akende-pesu.html">
+<body data-service-page="home" data-ru-title="Уборка квартиры / дома — PVL Teenused OÜ" data-ru-description="Поддерживающая и генеральная уборка, уборка после ремонта и переезда, мытьё окон и химчистка мебели.">
 <a class="skip-link" href="#main" data-i18n="skip">Liigu sisu juurde</a>
 
 <header class="site-header">
@@ -41,11 +42,11 @@
         <nav class="main-nav" id="main-nav" aria-label="Peamenüü" data-i18n-attr="aria-label:nav.label">
             <ul class="nav-list">
                 <li><a href="index.html" data-i18n="nav.home">Avaleht</a></li>
-                <li><a href="index.html#prices" data-i18n="nav.prices">Hinnad</a></li>
+                
                 <li><a href="index.html#about" data-i18n="nav.about">Meist</a></li>
-                <li><a href="index.html#works" aria-current="true" data-i18n="nav.works">Tööd</a></li>
+                <li><a href="index.html#works" data-i18n="nav.works">Tööd</a></li>
             </ul>
-            <a class="btn btn-primary nav-cta" href="#contact" data-i18n="nav.contact">Võta ühendust</a>
+            <a class="btn btn-primary nav-cta" href="#contacts" data-i18n="nav.contact">Võta ühendust</a>
         </nav>
 
         <div class="header-tools">
@@ -64,62 +65,163 @@
 </header>
 
 <main id="main" tabindex="-1">
-    <section class="page-hero" aria-labelledby="page-title">
-        <div class="container">
-            <nav class="breadcrumb" aria-label="Asukoht" data-i18n-attr="aria-label:cat.breadcrumb">
+    <section class="svc-hero" aria-labelledby="page-title">
+        <picture class="svc-hero-bg"><source type="image/webp" srcset="assets/img/kartochki/chistayakvartira-480.webp 480w, assets/img/kartochki/chistayakvartira-800.webp 800w, assets/img/kartochki/chistayakvartira-1200.webp 1200w" sizes="100vw"><img src="assets/img/kartochki/chistayakvartira-800.jpg" width="1254" height="1254" decoding="async" loading="eager" fetchpriority="high" alt=""></picture>
+        <div class="container svc-hero-inner">
+            <nav class="breadcrumb" aria-label="Asukoht" data-ru-aria="Навигация">
                 <ol>
-                    <li><a href="index.html" data-i18n="cat.home">Avaleht</a></li>
-                    <li><a href="index.html#works" data-i18n="cat.works">Meie tööd</a></li>
-                    <li aria-current="page" data-cat-field="title">Akende pesu</li>
+                    <li><a href="index.html" data-ru="Главная">Avaleht</a></li>
+                    <li><a href="index.html#services" data-ru="Услуги">Teenused</a></li>
+                    <li aria-current="page" data-ru="Уборка квартиры / дома">Korteri / maja koristus</li>
                 </ol>
             </nav>
-            <h1 id="page-title" data-cat-field="title">Akende pesu</h1>
-            <p class="page-lead" data-cat-field="intro">Peseme aknaid seest ja väljast: klaasid, raamid, aknalauad ja vajaduse korral dekoratiivsed võred.</p>
+            <h1 id="page-title" data-ru="Уборка квартиры / дома">Korteri / maja koristus</h1>
+            <p class="page-lead" data-ru="Поддерживающая и генеральная уборка, уборка после ремонта и переезда, мытьё окон и химчистка мебели.">Hooldus- ja suurpuhastus, koristus pärast remonti ja kolimist, akende pesu ning pehme mööbli puhastus.</p>
+            <p class="svc-hero-price" data-ru="от 35 €">alates 35 €</p>
             <div class="hero-actions">
-                <a class="btn btn-light btn-lg" href="#contact" data-i18n="cat.ctaPrice">Küsi hinda</a>
-                <a class="btn btn-ghost-light btn-lg" href="index.html#prices" data-i18n="cat.ctaPrices">Hinnad</a>
+                <a class="btn btn-light btn-lg" href="#contacts" data-open-request data-service="home" data-ru="Запросить предложение">Küsi pakkumist</a>
+                <a class="btn btn-ghost-light btn-lg" href="tel:+37255553545"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M6.6 3.5 9 3l1.8 4.3-2.2 1.6a12 12 0 0 0 6.5 6.5l1.6-2.2L21 15l-.5 2.4A2.5 2.5 0 0 1 18 19.5 15.5 15.5 0 0 1 4.5 6 2.5 2.5 0 0 1 6.6 3.5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span><span data-ru="Позвонить">Helista</span> +372 5555 3545</span></a>
             </div>
         </div>
     </section>
 
-    <section class="section cat-about" aria-labelledby="cat-about-title">
-        <div class="container cat-about-grid">
-            <div class="cat-about-text">
-                <h2 id="cat-about-title" data-i18n="cat.aboutTitle">Teenusest</h2>
-                <p data-cat-field="p:0">Kõige rohkem mustust koguneb keldri- ja esimese korruse akendele, mis asuvad tänava või kõnnitee lähedal. Puhtad aknad lasevad ruumidesse rohkem valgust ja muudavad hoone välisilme korrektsemaks.</p>
-                <p data-cat-field="p:1">Hind arvestatakse klaasipinna ruutmeetrite järgi. Täpse pakkumise teeme, kui oleme akende arvu ja ligipääsu täpsustanud.</p>
+    <section class="section svc-about" aria-labelledby="about-title">
+        <div class="container svc-about-grid">
+            <div class="svc-about-text" data-reveal>
+                <h2 id="about-title" data-ru="Об услуге">Teenusest</h2>
+                    <p data-ru="Помогаем поддерживать порядок в квартирах и частных домах — от регулярной уборки до генеральной уборки после ремонта или переезда. Также моем окна и чистим мягкую мебель.">Aitame hoida korras kortereid ja eramuid — alates regulaarsest koristusest kuni suurpuhastuseni pärast remonti või kolimist. Lisaks peseme aknaid ja puhastame pehmet mööblit.</p>
+                    <p data-ru="Перед работой уточняем площадь, состояние помещения и ваши пожелания. Окончательную стоимость согласовываем до начала уборки, чтобы вы знали цену заранее.">Enne tööd täpsustame pinna, ruumide seisukorra ja teie soovid. Lõpliku hinna lepime kokku enne koristuse algust, et teaksite hinda juba ette.</p>
             </div>
-            <aside class="cat-includes" aria-labelledby="cat-includes-title">
-                <h2 id="cat-includes-title" data-i18n="cat.includesTitle">Mis kuulub töö sisse</h2>
+            <aside class="cat-includes" data-reveal aria-labelledby="includes-title">
+                <h2 id="includes-title" data-ru="Что входит в работу">Mis kuulub töö sisse</h2>
                 <ul class="check-list">
-                    <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-cat-field="inc:0">Klaaside pesu seest ja väljast</span></li>
-                    <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-cat-field="inc:1">Raamide ja aknalaudade puhastamine</span></li>
-                    <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-cat-field="inc:2">Dekoratiivsete võrede pesu</span></li>
-                    <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-cat-field="inc:3">Keldri- ja esimese korruse aknad</span></li>
+                        <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-ru="Уборка комнат, кухни и санузла">Tubade, köögi ja vannitoa koristus</span></li>
+                        <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-ru="Мойка окон, рам и подоконников">Akende, raamide ja aknalaudade pesu</span></li>
+                        <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-ru="Химчистка диванов, матрасов и ковров">Diivanite, madratsite ja vaipade puhastus</span></li>
+                        <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-ru="Уборка после ремонта и переезда">Koristus pärast remonti ja kolimist</span></li>
                 </ul>
             </aside>
         </div>
     </section>
 
+    <section class="section svc-options" aria-labelledby="options-title">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <h2 id="options-title" data-ru="Виды работ и цены">Tööde liigid ja hinnad</h2>
+            </div>
+            <div class="option-grid">
+                    <article class="option-card" data-reveal>
+                        <h3><a href="tood-hoolduskoristus.html" data-ru="Поддерживающая уборка">Hoolduskoristus</a></h3>
+                        <p data-ru="Регулярная уборка для поддержания чистоты: пыль с доступных поверхностей, полы, кухня и санузел, вынос мусора.">Regulaarne koristus puhtuse hoidmiseks: tolmu pühkimine ligipääsetavatelt pindadelt, põrandad, köök ja vannituba, prügi väljaviimine.</p>
+                        <a class="option-more" href="tood-hoolduskoristus.html"><span data-ru="Подробнее о работе">Loe lähemalt</span><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        <div class="option-footer">
+                            <strong class="option-price" data-ru="от 35 €">alates 35 €</strong>
+                            <a class="btn btn-primary" href="#contacts" data-open-request data-service="home" data-ru="Заказать">Telli</a>
+                        </div>
+                    </article>
+                    <article class="option-card" data-reveal>
+                        <h3><a href="tood-suurpuhastus.html" data-ru="Генеральная уборка">Suurpuhastus</a></h3>
+                        <p data-ru="Тщательная уборка всей квартиры или дома: труднодоступные места, кухонные фасады и техника снаружи, сантехника, двери, плинтусы и подоконники.">Kogu korteri või maja põhjalik koristus: raskesti ligipääsetavad kohad, köögimööbel ja -tehnika väljast, sanitaartehnika, uksed, põrandaliistud ja aknalauad.</p>
+                        <a class="option-more" href="tood-suurpuhastus.html"><span data-ru="Подробнее о работе">Loe lähemalt</span><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        <div class="option-footer">
+                            <strong class="option-price" data-ru="от 95 €">alates 95 €</strong>
+                            <a class="btn btn-primary" href="#contacts" data-open-request data-service="home" data-ru="Заказать">Telli</a>
+                        </div>
+                    </article>
+                    <article class="option-card" data-reveal>
+                        <h3><a href="tood-remondijargne-koristus.html" data-ru="Уборка после ремонта">Koristus pärast remonti</a></h3>
+                        <p data-ru="Удаление строительной пыли и следов отделочных материалов с полов, окон, дверей и поверхностей, чтобы помещением можно было сразу пользоваться.">Ehitustolmu ja viimistlusmaterjalide jälgede eemaldamine põrandatelt, akendelt, ustelt ja pindadelt, et ruume saaks kohe kasutama hakata.</p>
+                        <a class="option-more" href="tood-remondijargne-koristus.html"><span data-ru="Подробнее о работе">Loe lähemalt</span><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        <div class="option-footer">
+                            <strong class="option-price" data-ru="от 119 €">alates 119 €</strong>
+                            <a class="btn btn-primary" href="#contacts" data-open-request data-service="home" data-ru="Заказать">Telli</a>
+                        </div>
+                    </article>
+                    <article class="option-card" data-reveal>
+                        <h3><a href="tood-kolimiskoristus.html" data-ru="Уборка после переезда">Koristus pärast kolimist</a></h3>
+                        <p data-ru="Уборка пустой квартиры или дома до или после переезда: шкафы внутри, кухня, санузел, полы и подоконники.">Tühja korteri või maja koristus enne või pärast kolimist: kapid seest, köök, vannituba, põrandad ja aknalauad.</p>
+                        <a class="option-more" href="tood-kolimiskoristus.html"><span data-ru="Подробнее о работе">Loe lähemalt</span><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        <div class="option-footer">
+                            <strong class="option-price" data-ru="от 105 €">alates 105 €</strong>
+                            <a class="btn btn-primary" href="#contacts" data-open-request data-service="home" data-ru="Заказать">Telli</a>
+                        </div>
+                    </article>
+                    <article class="option-card" data-reveal>
+                        <h3><a href="tood-aknapesu.html" data-ru="Мытьё окон">Akende pesu</a></h3>
+                        <p data-ru="Мойка стёкол, рам и подоконников изнутри и снаружи. Стоимость зависит от количества и размера окон.">Klaaside, raamide ja aknalaudade pesu seest ja väljast. Hind sõltub akende arvust ja suurusest.</p>
+                        <a class="option-more" href="tood-aknapesu.html"><span data-ru="Подробнее о работе">Loe lähemalt</span><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        <div class="option-footer">
+                            <strong class="option-price" data-ru="от 6 €">alates 6 €</strong>
+                            <a class="btn btn-primary" href="#contacts" data-open-request data-service="home" data-ru="Заказать">Telli</a>
+                        </div>
+                    </article>
+                    <article class="option-card" data-reveal>
+                        <h3><a href="tood-diivanite-ja-vaipade-puhastus.html" data-ru="Химчистка диванов и ковровых покрытий">Diivanite ja vaipade puhastus</a></h3>
+                        <p data-ru="Глубокая чистка обивки мягкой мебели и ковровых покрытий: удаление пыли, пятен и повседневных загрязнений. Результат зависит от ткани и давности пятен.">Pehme mööbli ja vaipkatete süvapuhastus: tolmu, plekkide ja igapäevase mustuse eemaldamine. Tulemus sõltub kangast ja plekkide vanusest.</p>
+                        <a class="option-more" href="tood-diivanite-ja-vaipade-puhastus.html"><span data-ru="Подробнее о работе">Loe lähemalt</span><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                        <div class="option-footer">
+                            <strong class="option-price" data-ru="от 55 €">alates 55 €</strong>
+                            <a class="btn btn-primary" href="#contacts" data-open-request data-service="home" data-ru="Заказать">Telli</a>
+                        </div>
+                    </article>
+            </div>
+            <p class="price-disclaimer" data-ru="Цены указаны ориентировочно. Точная стоимость обсуждается индивидуально.">Hinnad on orienteeruvad. Täpne hind lepitakse kokku individuaalselt.</p>
+        </div>
+    </section>
+
     <section class="section works" id="works" aria-labelledby="works-title">
         <div class="container">
-            <div class="section-head">
-                <h2 id="works-title" data-i18n="cat.examplesTitle">Tööde näited</h2>
-                <p class="section-lead" data-i18n="cat.examplesLead">Fotod enne ja pärast. Kui fotod on tehtud samast kohast, liigutage eraldajat, et neid võrrelda.</p>
+            <div class="section-head" data-reveal>
+                <p class="eyebrow" data-i18n="works.eyebrow">Enne ja pärast</p>
+                <h2 id="works-title" data-ru="Примеры работ — до и после">Tööde näited — enne ja pärast</h2>
+                <p class="section-lead" data-ru="Фотографии наших работ. Передвиньте разделитель, чтобы сравнить, как было и как стало.">Meie tehtud tööde fotod. Liigutage eraldajat, et võrrelda olukorda enne ja pärast.</p>
             </div>
-            <div class="works-grid works-grid--page" data-works></div>
-            <p class="works-empty" data-works-empty hidden data-i18n="works.empty">Tööde näited lisame peagi.</p>
+            <div class="works-grid works-grid--page" data-service-works="sofa,mattress,window-sill,window-flat,sofa-2"></div>
+            <p class="works-empty" data-works-empty hidden data-ru="Примеры работ скоро появятся.">Tööde näited lisame peagi.</p>
         </div>
     </section>
 
-    <section class="section cat-others" aria-labelledby="others-title">
+    <section class="section steps-section" aria-labelledby="steps-title">
         <div class="container">
-            <h2 id="others-title" data-i18n="cat.othersTitle">Teised tööd</h2>
-            <div class="cat-cards" data-other-cats></div>
+            <div class="section-head" data-reveal>
+                <h2 id="steps-title" data-ru="Как мы работаем">Kuidas me töötame</h2>
+            </div>
+            <ol class="steps">
+                    <li class="step" data-reveal>
+                        <span class="step-num" aria-hidden="true">1</span>
+                        <h3 data-ru="Заявка">Päring</h3>
+                        <p data-ru="Позвоните или оставьте заявку на сайте — опишите объект и нужные работы.">Helistage või saatke päring kodulehel — kirjeldage objekti ja vajalikke töid.</p>
+                    </li>
+                    <li class="step" data-reveal>
+                        <span class="step-num" aria-hidden="true">2</span>
+                        <h3 data-ru="Оценка">Hindamine</h3>
+                        <p data-ru="Уточняем объём работ, при необходимости по фотографиям.">Täpsustame tööde mahu, vajaduse korral fotode põhjal.</p>
+                    </li>
+                    <li class="step" data-reveal>
+                        <span class="step-num" aria-hidden="true">3</span>
+                        <h3 data-ru="Согласование">Kokkulepe</h3>
+                        <p data-ru="До начала работ согласовываем стоимость и удобное время.">Lepime enne töö algust kokku hinna ja sobiva aja.</p>
+                    </li>
+                    <li class="step" data-reveal>
+                        <span class="step-num" aria-hidden="true">4</span>
+                        <h3 data-ru="Работа">Töö</h3>
+                        <p data-ru="Выполняем работу и показываем вам результат.">Teeme töö ära ja näitame teile tulemust.</p>
+                    </li>
+            </ol>
         </div>
     </section>
 
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <section class="section svc-others" aria-labelledby="others-title">
+        <div class="container">
+            <h2 id="others-title" data-reveal data-ru="Другие услуги">Teised teenused</h2>
+            <div class="other-cards">
+                <a class="other-card" href="tood-pehme-moobli-puhastus.html" data-reveal><span class="other-card-media"><picture><source type="image/webp" srcset="assets/img/kartochki/chistiypodjesd-480.webp 480w, assets/img/kartochki/chistiypodjesd-800.webp 800w, assets/img/kartochki/chistiypodjesd-1200.webp 1200w" sizes="(min-width: 900px) 160px, 120px"><img src="assets/img/kartochki/chistiypodjesd-800.jpg" width="1254" height="1254" decoding="async" loading="lazy" alt=""></picture></span><span class="other-card-body"><strong data-ru="Уборка квартирных товариществ">Korteriühistute koristus</strong><span data-ru="Уборка подъездов, территории и услуги дворника.">Trepikodade ja territooriumi koristus ning kojamehe teenused.</span><span class="other-card-price" data-ru="По договорённости">Kokkuleppel</span></span><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+                <a class="other-card" href="tood-hekkide-pugamine.html" data-reveal><span class="other-card-media"><picture><source type="image/webp" srcset="assets/img/kartochki/pokoshenayatrava-480.webp 480w, assets/img/kartochki/pokoshenayatrava-600.webp 600w" sizes="(min-width: 900px) 160px, 120px"><img src="assets/img/kartochki/pokoshenayatrava-600.jpg" width="600" height="450" decoding="async" loading="lazy" alt=""></picture></span><span class="other-card-body"><strong data-ru="Покос травы и уход за участком">Muru niitmine ja aia hooldus</strong><span data-ru="Покос травы, стрижка живой изгороди и кустов и уход за участком.">Muru niitmine, hekkide ja põõsaste pügamine ning aia hooldus.</span><span class="other-card-price" data-ru="от 40 €">alates 40 €</span></span><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contacts" aria-labelledby="contact-title">
         <div class="container contact-grid">
             <div class="contact-intro">
                 <p class="eyebrow eyebrow--light" data-i18n="contact.eyebrow">Kontakt</p>
@@ -197,13 +299,9 @@
                 <fieldset class="field" aria-describedby="rq-services-err">
                     <legend><span data-i18n="form.services">Millised teenused teid huvitavad?</span> <span class="req" aria-hidden="true">*</span></legend>
                     <div class="check-grid">
-                        <label class="check"><input type="checkbox" name="services" value="mowing"><span data-i18n="form.svc.mowing">Muru niitmine</span></label>
-                        <label class="check"><input type="checkbox" name="services" value="cleanup"><span data-i18n="form.svc.cleanup">Territooriumi ja lehtede koristus</span></label>
-                        <label class="check"><input type="checkbox" name="services" value="waste"><span data-i18n="form.svc.waste">Prügivedu</span></label>
-                        <label class="check"><input type="checkbox" name="services" value="hedges"><span data-i18n="form.svc.hedges">Hekkide pügamine</span></label>
-                        <label class="check"><input type="checkbox" name="services" value="indoor"><span data-i18n="form.svc.indoor">Ruumide koristus</span></label>
-                        <label class="check"><input type="checkbox" name="services" value="windows"><span data-i18n="form.svc.windows">Akende pesu</span></label>
-                        <label class="check"><input type="checkbox" name="services" value="upholstery"><span data-i18n="form.svc.upholstery">Pehme mööbli puhastus</span></label>
+                        <label class="check"><input type="checkbox" name="services" value="community"><span data-i18n="form.svc.community">Korteriühistute koristus</span></label>
+                        <label class="check"><input type="checkbox" name="services" value="home"><span data-i18n="form.svc.home">Korteri / maja koristus</span></label>
+                        <label class="check"><input type="checkbox" name="services" value="yard"><span data-i18n="form.svc.yard">Muru niitmine ja aia hooldus</span></label>
                     </div>
                     <p class="field-error" id="rq-services-err" hidden></p>
                 </fieldset>

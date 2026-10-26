@@ -1,16 +1,17 @@
 <!doctype html>
-<!-- СОЗДАНО АВТОМАТИЧЕСКИ скриптом scripts/build-pages.mjs. Тексты меняйте в src/config.ts, затем npm run build. -->
-<html lang="et">
+<!-- СОЗДАНО АВТОМАТИЧЕСКИ скриптом scripts/build-pages.mjs. Тексты меняйте в src/service-details.ts, затем npm run build. -->
+<html lang="et" data-default-lang="ru">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>/* LANG-BOOT */(function(){var d=document.documentElement;try{var p=new URLSearchParams(location.search).get('lang'),s=null;try{s=localStorage.getItem('pvl-lang')}catch(e){}var l=(p==='et'||p==='ru')?p:((s==='et'||s==='ru')?s:(d.getAttribute('data-default-lang')||'et'));if(l!=='et'){d.classList.add('lang-boot');setTimeout(function(){d.classList.remove('lang-boot')},2500)}}catch(e){}d.classList.add('js')})();</script>
     <title>Territooriumi koristus — PVL Teenused OÜ</title>
-    <meta name="description" content="Puhastame kõnniteid, platse ja kõvakattega alasid prahist, liivast, lehtedest ja mustusest.">
+    <meta name="description" content="Kortermaja õue, kõnniteede ja platside koristus.">
     <meta name="theme-color" content="#1a4371">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="PVL Teenused OÜ">
     <meta property="og:title" content="Territooriumi koristus — PVL Teenused OÜ">
-    <meta property="og:description" content="Puhastame kõnniteid, platse ja kõvakattega alasid prahist, liivast, lehtedest ja mustusest.">
+    <meta property="og:description" content="Kortermaja õue, kõnniteede ja platside koristus.">
     <meta property="og:locale" content="et_EE">
     <meta property="og:locale:alternate" content="ru_RU">
     <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
@@ -26,7 +27,7 @@
     <script defer src="assets/js/request.js"></script>
     <script defer src="assets/js/index.js"></script>
 </head>
-<body data-category-page="tood-territooriumi-koristus.html">
+<body data-service-page="community" data-ru-title="Уборка территории — PVL Teenused OÜ" data-ru-description="Уборка двора, дорожек и площадок вокруг многоквартирного дома.">
 <a class="skip-link" href="#main" data-i18n="skip">Liigu sisu juurde</a>
 
 <header class="site-header">
@@ -41,11 +42,11 @@
         <nav class="main-nav" id="main-nav" aria-label="Peamenüü" data-i18n-attr="aria-label:nav.label">
             <ul class="nav-list">
                 <li><a href="index.html" data-i18n="nav.home">Avaleht</a></li>
-                <li><a href="index.html#prices" data-i18n="nav.prices">Hinnad</a></li>
+                
                 <li><a href="index.html#about" data-i18n="nav.about">Meist</a></li>
-                <li><a href="index.html#works" aria-current="true" data-i18n="nav.works">Tööd</a></li>
+                <li><a href="index.html#works" data-i18n="nav.works">Tööd</a></li>
             </ul>
-            <a class="btn btn-primary nav-cta" href="#contact" data-i18n="nav.contact">Võta ühendust</a>
+            <a class="btn btn-primary nav-cta" href="#contacts" data-i18n="nav.contact">Võta ühendust</a>
         </nav>
 
         <div class="header-tools">
@@ -64,62 +65,111 @@
 </header>
 
 <main id="main" tabindex="-1">
-    <section class="page-hero" aria-labelledby="page-title">
-        <div class="container">
-            <nav class="breadcrumb" aria-label="Asukoht" data-i18n-attr="aria-label:cat.breadcrumb">
+    <section class="svc-hero svc-hero--detail" aria-labelledby="page-title">
+        <picture class="svc-hero-bg"><source type="image/webp" srcset="assets/img/kartochki/chistiypodjesd-480.webp 480w, assets/img/kartochki/chistiypodjesd-800.webp 800w, assets/img/kartochki/chistiypodjesd-1200.webp 1200w" sizes="100vw"><img src="assets/img/kartochki/chistiypodjesd-800.jpg" width="1254" height="1254" decoding="async" loading="eager" fetchpriority="high" alt=""></picture>
+        <div class="container svc-hero-inner">
+            <nav class="breadcrumb" aria-label="Asukoht" data-ru-aria="Навигация">
                 <ol>
-                    <li><a href="index.html" data-i18n="cat.home">Avaleht</a></li>
-                    <li><a href="index.html#works" data-i18n="cat.works">Meie tööd</a></li>
-                    <li aria-current="page" data-cat-field="title">Territooriumi koristus</li>
+                    <li><a href="index.html" data-ru="Главная">Avaleht</a></li>
+                    <li><a href="tood-pehme-moobli-puhastus.html" data-ru="Уборка квартирных товариществ">Korteriühistute koristus</a></li>
+                    <li aria-current="page" data-ru="Уборка территории">Territooriumi koristus</li>
                 </ol>
             </nav>
-            <h1 id="page-title" data-cat-field="title">Territooriumi koristus</h1>
-            <p class="page-lead" data-cat-field="intro">Puhastame kõnniteid, platse ja kõvakattega alasid prahist, liivast, lehtedest ja mustusest.</p>
-            <div class="hero-actions">
-                <a class="btn btn-light btn-lg" href="#contact" data-i18n="cat.ctaPrice">Küsi hinda</a>
-                <a class="btn btn-ghost-light btn-lg" href="index.html#prices" data-i18n="cat.ctaPrices">Hinnad</a>
-            </div>
+            <h1 id="page-title" data-ru="Уборка территории">Territooriumi koristus</h1>
+            <p class="page-lead" data-ru="Уборка двора, дорожек и площадок вокруг многоквартирного дома.">Kortermaja õue, kõnniteede ja platside koristus.</p>
+            <p class="svc-hero-price" data-ru="По договорённости">Kokkuleppel</p>
         </div>
     </section>
 
-    <section class="section cat-about" aria-labelledby="cat-about-title">
-        <div class="container cat-about-grid">
-            <div class="cat-about-text">
-                <h2 id="cat-about-title" data-i18n="cat.aboutTitle">Teenusest</h2>
-                <p data-cat-field="p:0">Korras territoorium jätab hea mulje nii elanikele, klientidele kui ka külalistele. Töö võib olla ühekordne, näiteks kevadkoristus pärast talve, või korduv — sageduse lepime kokku.</p>
-                <p data-cat-field="p:1">Enne töö algust täpsustame ala suuruse, katte tüübi ja selle, kas kogutud praht tuleb ära vedada.</p>
+    <section class="section svc-about" aria-labelledby="about-title">
+        <div class="container svc-about-grid">
+            <div class="svc-about-text" data-reveal>
+                <h2 id="about-title" data-ru="Описание работы">Töö kirjeldus</h2>
+                    <p data-ru="Чистая территория вокруг дома удобна для жильцов и безопасна для детей. Убираем мусор, листья, песок и грязь с дворов, дорожек и площадок, наводим порядок у входов.">Puhas maja ümbrus on elanikele mugav ja lastele ohutu. Koristame prahi, lehed, liiva ja mustuse õuedest, kõnniteedelt ja platsidelt ning korrastame sissepääsude ümbruse.</p>
+                    <p data-ru="Объём работ меняется в течение года: весной — песок и мусор после зимы, летом — регулярная уборка, осенью — листья. График согласовываем с товариществом.">Tööde maht muutub aasta jooksul: kevadel talvest jäänud liiv ja praht, suvel regulaarne koristus, sügisel lehed. Graafiku lepime kokku ühistuga.</p>
             </div>
-            <aside class="cat-includes" aria-labelledby="cat-includes-title">
-                <h2 id="cat-includes-title" data-i18n="cat.includesTitle">Mis kuulub töö sisse</h2>
+            <aside class="cat-includes" data-reveal aria-labelledby="includes-title">
+                <h2 id="includes-title" data-ru="Что входит в работу">Mis kuulub töö sisse</h2>
                 <ul class="check-list">
-                    <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-cat-field="inc:0">Prahi, liiva ja kruusa eemaldamine</span></li>
-                    <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-cat-field="inc:1">Lehtede ja okste kokkuriisumine</span></li>
-                    <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-cat-field="inc:2">Plaatide ja kõnniteede puhastamine</span></li>
-                    <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-cat-field="inc:3">Kogutud prahi äravedu kokkuleppel</span></li>
+                        <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-ru="Сбор мусора на территории">Prahi koristamine territooriumilt</span></li>
+                        <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-ru="Подметание дорожек, площадок и крылец">Kõnniteede, platside ja trepiesiste pühkimine</span></li>
+                        <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-ru="Уборка листьев осенью">Lehtede koristus sügisel</span></li>
+                        <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-ru="Уборка песка и гравия после зимы">Liiva ja kruusa koristamine pärast talve</span></li>
+                        <li><span class="check-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span data-ru="Порядок у мусорных контейнеров и входов">Korra hoidmine prügikonteinerite ja sissepääsude juures</span></li>
                 </ul>
             </aside>
         </div>
     </section>
 
-    <section class="section works" id="works" aria-labelledby="works-title">
+    <section class="section svc-process" aria-labelledby="process-title">
         <div class="container">
-            <div class="section-head">
-                <h2 id="works-title" data-i18n="cat.examplesTitle">Tööde näited</h2>
-                <p class="section-lead" data-i18n="cat.examplesLead">Fotod enne ja pärast. Kui fotod on tehtud samast kohast, liigutage eraldajat, et neid võrrelda.</p>
+            <div class="section-head" data-reveal>
+                <h2 id="process-title" data-ru="Как проходит работа">Kuidas töö käib</h2>
             </div>
-            <div class="works-grid works-grid--page" data-works></div>
-            <p class="works-empty" data-works-empty hidden data-i18n="works.empty">Tööde näited lisame peagi.</p>
+            <ol class="process-steps">
+                    <li class="process-step" data-reveal>
+                        <span class="step-num" aria-hidden="true">1</span>
+                        <p data-ru="Осматриваем территорию и согласовываем объём работ.">Vaatame territooriumi üle ja lepime kokku tööde mahu.</p>
+                    </li>
+                    <li class="process-step" data-reveal>
+                        <span class="step-num" aria-hidden="true">2</span>
+                        <p data-ru="Собираем крупный мусор.">Korjame kokku suurema prahi.</p>
+                    </li>
+                    <li class="process-step" data-reveal>
+                        <span class="step-num" aria-hidden="true">3</span>
+                        <p data-ru="Подметаем дорожки и площадки, сгребаем листья.">Pühime kõnniteed ja platsid ning riisume lehed.</p>
+                    </li>
+                    <li class="process-step" data-reveal>
+                        <span class="step-num" aria-hidden="true">4</span>
+                        <p data-ru="Собранный мусор складываем в мешки или вывозим по договорённости.">Kogutud prahi paneme kottidesse või veame kokkuleppel ära.</p>
+                    </li>
+            </ol>
         </div>
     </section>
 
-    <section class="section cat-others" aria-labelledby="others-title">
-        <div class="container">
-            <h2 id="others-title" data-i18n="cat.othersTitle">Teised tööd</h2>
-            <div class="cat-cards" data-other-cats></div>
+    <section class="section svc-price" aria-labelledby="price-title">
+        <div class="container svc-price-grid">
+            <div class="price-box" data-reveal>
+                <h2 id="price-title" data-ru="Стоимость">Hind</h2>
+                <div class="price-lines">
+                        <div class="price-line">
+                            <span class="price-line-label" data-ru="Уборка территории">Territooriumi koristus</span>
+                            <strong class="price-line-value" data-ru="По договорённости">Kokkuleppel</strong>
+                        </div>
+                </div>
+                <p class="price-disclaimer" data-ru="Цены указаны ориентировочно. Точная стоимость обсуждается индивидуально.">Hinnad on orienteeruvad. Täpne hind lepitakse kokku individuaalselt.</p>
+            </div>
+            <div class="notes-box" data-reveal>
+                <h2 data-ru="Полезно знать">Hea teada</h2>
+                <ul class="notes-list">
+                        <li data-ru="Стоимость зависит от площади территории, вида покрытия и частоты уборки.">Hind sõltub territooriumi suurusest, katte liigist ja koristuse sagedusest.</li>
+                        <li data-ru="Вывоз собранного мусора обсуждается отдельно.">Kogutud prahi äravedu lepitakse kokku eraldi.</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <section class="section detail-cta" aria-labelledby="cta-title">
+        <div class="container detail-cta-inner" data-reveal>
+            <div>
+                <h2 id="cta-title" data-ru="Остались вопросы?">Kas teil on küsimusi?</h2>
+                <p data-ru="Опишите ваш объект — подскажем, что можем сделать и сколько это будет стоить.">Kirjeldage oma objekti — anname teada, mida saame teha ja mis see maksab.</p>
+            </div>
+            <div class="detail-cta-actions">
+                <a class="btn btn-primary btn-lg" href="#contacts" data-ru="Связаться">Võta ühendust</a>
+                <a class="btn btn-outline btn-lg" href="tood-pehme-moobli-puhastus.html"><span><span data-ru="Все работы">Kõik tööd</span>: <span data-ru="Уборка квартирных товариществ">Korteriühistute koristus</span></span></a>
+            </div>
+        </div>
+        <div class="container detail-siblings" data-reveal>
+            <h3 data-ru="Другие работы в этой услуге">Teised tööd selles teenuses</h3>
+            <div class="chip-links">
+                <a class="chip-link" href="tood-trepikodade-koristus.html" data-ru="Уборка подъездов">Trepikodade koristus</a>
+                <a class="chip-link" href="tood-kojamehe-teenused.html" data-ru="Услуги дворника">Kojamehe teenused</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section contact" id="contacts" aria-labelledby="contact-title">
         <div class="container contact-grid">
             <div class="contact-intro">
                 <p class="eyebrow eyebrow--light" data-i18n="contact.eyebrow">Kontakt</p>
@@ -197,13 +247,9 @@
                 <fieldset class="field" aria-describedby="rq-services-err">
                     <legend><span data-i18n="form.services">Millised teenused teid huvitavad?</span> <span class="req" aria-hidden="true">*</span></legend>
                     <div class="check-grid">
-                        <label class="check"><input type="checkbox" name="services" value="mowing"><span data-i18n="form.svc.mowing">Muru niitmine</span></label>
-                        <label class="check"><input type="checkbox" name="services" value="cleanup"><span data-i18n="form.svc.cleanup">Territooriumi ja lehtede koristus</span></label>
-                        <label class="check"><input type="checkbox" name="services" value="waste"><span data-i18n="form.svc.waste">Prügivedu</span></label>
-                        <label class="check"><input type="checkbox" name="services" value="hedges"><span data-i18n="form.svc.hedges">Hekkide pügamine</span></label>
-                        <label class="check"><input type="checkbox" name="services" value="indoor"><span data-i18n="form.svc.indoor">Ruumide koristus</span></label>
-                        <label class="check"><input type="checkbox" name="services" value="windows"><span data-i18n="form.svc.windows">Akende pesu</span></label>
-                        <label class="check"><input type="checkbox" name="services" value="upholstery"><span data-i18n="form.svc.upholstery">Pehme mööbli puhastus</span></label>
+                        <label class="check"><input type="checkbox" name="services" value="community"><span data-i18n="form.svc.community">Korteriühistute koristus</span></label>
+                        <label class="check"><input type="checkbox" name="services" value="home"><span data-i18n="form.svc.home">Korteri / maja koristus</span></label>
+                        <label class="check"><input type="checkbox" name="services" value="yard"><span data-i18n="form.svc.yard">Muru niitmine ja aia hooldus</span></label>
                     </div>
                     <p class="field-error" id="rq-services-err" hidden></p>
                 </fieldset>

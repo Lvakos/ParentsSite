@@ -2,7 +2,7 @@
 // Форма заявки «Kirjuta meile».
 // Без сервиса форм (REQUEST_FORM.endpoint пустой) составляет письмо в почтовой программе посетителя.
 // С сервисом форм отправляет заявку напрямую и сообщает об успехе только после ответа сервера.
-const SERVICE_KEYS = ['mowing', 'cleanup', 'waste', 'hedges', 'indoor', 'windows', 'upholstery'];
+const SERVICE_KEYS = ['community', 'home', 'yard'];
 function initRequestForm() {
     const dialog = document.getElementById('request-dialog');
     if (!dialog || typeof dialog.showModal !== 'function')
@@ -27,11 +27,16 @@ function initRequestForm() {
     updateTexts();
     langListeners.push(updateTexts);
     // ---- Открытие и закрытие ----
-    const open = () => {
+    const open = (service) => {
         form.hidden = false;
         result.hidden = true;
-        const preset = WORK_CATEGORIES.find((c) => c.page === document.body.dataset.categoryPage)?.formService;
-        if (preset && !serviceBoxes().some((b) => b.checked)) {
+        // Услуга отмечается заранее: по кнопке («Заказать» у вида работ) или по странице услуги
+        const preset = service || document.body.dataset.servicePage;
+        if (service) {
+            // Кнопка у конкретной услуги — отмечаем только её
+            serviceBoxes().forEach((b) => (b.checked = b.value === service));
+        }
+        else if (preset && !serviceBoxes().some((b) => b.checked)) {
             const box = serviceBoxes().find((b) => b.value === preset);
             if (box)
                 box.checked = true;
@@ -42,7 +47,7 @@ function initRequestForm() {
     };
     document.querySelectorAll('[data-open-request]').forEach((el) => el.addEventListener('click', (e) => {
         e.preventDefault();
-        open();
+        open(el.dataset.service);
     }));
     dialog.querySelectorAll('[data-close-request]').forEach((el) => el.addEventListener('click', () => dialog.close()));
     // Щелчок по затемнённому фону закрывает окно
@@ -118,7 +123,7 @@ function initRequestForm() {
     // ---- Текст заявки ----
     const serviceName = (key) => {
         const span = form.querySelector(`[data-i18n="form.svc.${key}"]`);
-        return span?.textContent?.trim() ?? key;
+        return span?.textContent?.trim() ?? ({ community: 'Уборка квартирных товариществ', home: 'Уборка квартиры / дома', yard: 'Покос травы и уход за участком' }[key] ?? key);
     };
     const compose = (d) => {
         const services = d.services.map(serviceName).join(', ');

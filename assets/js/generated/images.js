@@ -60,6 +60,38 @@ const IMAGES = {
         "fallbackWidth": 640,
         "base": "assets/img/glubokayachistka/matrasposle"
     },
+    "kartochki/chistayakvartira": {
+        "w": 1254,
+        "h": 1254,
+        "widths": [
+            480,
+            800,
+            1200
+        ],
+        "fallbackWidth": 800,
+        "base": "assets/img/kartochki/chistayakvartira"
+    },
+    "kartochki/chistiypodjesd": {
+        "w": 1254,
+        "h": 1254,
+        "widths": [
+            480,
+            800,
+            1200
+        ],
+        "fallbackWidth": 800,
+        "base": "assets/img/kartochki/chistiypodjesd"
+    },
+    "kartochki/pokoshenayatrava": {
+        "w": 600,
+        "h": 450,
+        "widths": [
+            480,
+            600
+        ],
+        "fallbackWidth": 600,
+        "base": "assets/img/kartochki/pokoshenayatrava"
+    },
     "moykaOkon/1moykaOkonDo": {
         "w": 3213,
         "h": 5712,
@@ -188,6 +220,28 @@ const IMAGES = {
         "fallbackWidth": 640,
         "base": "assets/img/strizhkaKustov/kustiposle2"
     },
+    "thumbnail/ChistayaKvartira": {
+        "w": 1672,
+        "h": 940,
+        "widths": [
+            640,
+            1280,
+            1672
+        ],
+        "fallbackWidth": 1280,
+        "base": "assets/img/thumbnail/ChistayaKvartira"
+    },
+    "thumbnail/ChistiyPodjezd": {
+        "w": 1672,
+        "h": 941,
+        "widths": [
+            640,
+            1280,
+            1672
+        ],
+        "fallbackWidth": 1280,
+        "base": "assets/img/thumbnail/ChistiyPodjezd"
+    },
     "thumbnail/pokostravi": {
         "w": 1672,
         "h": 941,
@@ -252,4 +306,4 @@ const IMAGES = {
     }
 };
 /** Фото для слайдера на главном экране (папка photos/thumbnail), по порядку имён файлов. */
-const HERO_IMAGES = ["thumbnail/pokostravi", "thumbnail/uborkaterritory"];
+const HERO_IMAGES = ["thumbnail/ChistayaKvartira", "thumbnail/ChistiyPodjezd", "thumbnail/pokostravi", "thumbnail/uborkaterritory"];
